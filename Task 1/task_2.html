@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<style>
+* {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+</style>
+    <p>Unordered List </p>
+    <ul>
+        <li>First Item</li>
+        <li id = item></li>
+    </ul>
+    <button onclick="changeText()">Add Item</button>
+<script>
+    function changeText() {
+        document.getElementById("item").innerHTML = "New Course";
+    }
+</script>
+</body>
+</html>

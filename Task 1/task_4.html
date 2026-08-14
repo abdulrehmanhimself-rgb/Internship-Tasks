@@ -1,0 +1,24 @@
+<html>
+
+<body>
+<style>
+* {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+</style>
+    <h3>Hide/Show Paragraph</h3>
+    <p id = "text">Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow. It allows you to type shortcuts that expand into full pieces of code.
+    </p>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+<script>
+    function hide() {
+        let num = document.getElementById("text").innerHTML = "";
+    }
+    function show() {
+        let num = document.getElementById("text").innerHTML = "Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow. It allows you to type shortcuts that expand into full pieces of code.";
+    }
+</script>
+</body>
+</html>
