@@ -1,0 +1,30 @@
+<html>
+<body>
+<style>
+* {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+</style>
+    <h1>Form</h1>
+    <form>
+        <label>Email: </label>
+        <input type="email" email="email" id="email">
+        <br>
+    </form>
+    <button onclick="submit()">Submit</button>
+<script>
+    function submit() {
+        let email = document.getElementById("email").value;
+        if(email.includes("@") && email.includes("."))
+        {
+            alert("Submitted! " + email);
+        }
+        else
+        {
+            alert("Invalid Email Address");
+        }
+    }
+</script>
+</body>
+</html>

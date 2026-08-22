@@ -1,0 +1,30 @@
+<html>
+<body>
+<style>
+* {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+</style>
+    <h1>Form</h1>
+    <form>
+        <label>Enter Password: </label>
+        <input type="password" password="password" id="password">
+        <br>
+    </form>
+    <button onclick="submit()">Submit</button>
+<script>
+    function submit() {
+        let password = document.getElementById("password").value;
+        if(password.length < 8)
+        {
+            alert("Password must be at least 8 characters long");
+        }
+        else
+        {
+            alert("Submitted! Your password is secure.");
+        }
+    }
+</script>
+</body>
+</html>
