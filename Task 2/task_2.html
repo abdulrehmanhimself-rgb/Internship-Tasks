@@ -16,7 +16,8 @@
 <script>
     function submit() {
         let email = document.getElementById("email").value;
-        if(email.includes("@") && email.includes("."))
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(emailPattern.test(email))
         {
             alert("Submitted! " + email);
         }
