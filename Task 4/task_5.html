@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>CSS Task 5</title>
+    <style>
+        * {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+            margin-right: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: 600px) {
+            .cards-container {
+                flex-direction: column;
+            }
+            .card {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "cards-container">
+        <div class = "card">
+            <h2>HTML</h2>
+        </div>
+        <div class = "card">
+            <h2>CSS</h2>
+        </div>
+        <div class = "card">
+            <h2>JavaScript</h2>
+        </div>
+        <div class = "card">
+            <h2>Bootstrap</h2>
+        </div>
+    </div>
+</body>
+</html>

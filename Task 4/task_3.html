@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>CSS Task 3</title>
+    <style>
+        * {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .menu li {
+            padding: 10px;
+            background-color: #89d2d2;
+        }
+        @media screen and (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class = "menu">
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
